@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharapidin</title>
+    <!-- Подключаем его собственный CSS файл -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ГЛАВНЫЙ БЛОК ПРОФИЛЯ -->
+    <div class="fam-member1-container">
+        
+        <!-- Левая текстовая сторона (60% ширины) -->
+        <div class="fam-member1-text-zone">
+            
+            <!-- 1. ИМЯ ПЕРВОГО ЧЛЕНА СЕМЬИ -->
+            <div class="fam-member1-name">Jumake uluu Sharapidin</div>
+            
+            <!-- 2. ОПИСАНИЕ / БИОГРАФИЯ -->
+            <div class="fam-member1-bio">
+               Шарапидин — прародитель семьи и самый старший ее участник. Отец всех трех отцов,<br>а также главное звено всей семьи. Память о нем не угаснет никогда, ибо его имя — это фамилия для его четырех внуков.
+            </div>
+            
+            <!-- Блок характеристик -->
+            <div class="fam-member1-stats-row">
+                <!-- Любимый цвет -->
+                <div>
+                    <div class="fam-member1-label">fav color:</div>
+                    <!-- 3. СЮДА ВПИСАТЬ КОД ЛЮБИМОГО ЦВЕТА (в background-color) -->
+                    <div class="fam-member1-color-box" style="background-color: #585858;"></div>
+                </div>
+                
+                <!-- Поколение -->
+                <div>
+                    <div class="fam-member1-label">generation:</div>
+                    <!-- 4. СЮДА ПИСАТЬ БУКВУ ПОКОЛЕНИЯ -->
+                    <div class="fam-member1-gen-text">The silent generation</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Правая сторона для фото (40% ширины) -->
+        <div class="fam-member1-photo-zone">
+            <!-- 5. СЮДА ВСТАВИТЬ НАЗВАНИЕ ГЛАВНОГО ФОТО (вместо member1-main.jpg) -->
+            <!-- Фото занимает 60% своей области, линия прижата к нему слева -->
+            <img src="./img/photo_4_2026-11-01_19-02-14.jpg" alt="Главное фото" class="fam-member1-main-img">
+        </div>
+
+    </div>
+
+    <!-- СЕКЦИЯ С ДЕТСКИМИ ФОТОГРАФИЯМИ -->
+    <section class="fam-member1-gallery-section">
+        
+        <!-- Заголовок галереи -->
+        <div class="fam-member1-gallery-title">Early family moments</div>
+        
+        <div class="fam-member1-gallery-grid">
+            <!-- 6. СЮДА ВСТАВЛЯЙТЕ НАЗВАНИЯ ДЕТСКИХ КАРТИНОК (280x200px) -->
+            <img src="./img/photo_1_2026-11-01_20-07-38.jpg" alt="Детство 1" class="fam-member1-gallery-item">
+            <img src="./img/photo_2_2026-11-01_20-07-38.jpg" alt="Детство 2" class="fam-member1-gallery-item">
+        </div>
+
+    </section>
+
+</body>
+</html>

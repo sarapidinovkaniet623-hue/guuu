@@ -1,0 +1,2992 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Обычный белый фон для всех внутренних карточек по умолчанию */
+body {
+    background-color: #ffffff;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Светло-зеленый фон ТОЛЬКО для главной страницы (index.html) */
+body.main-page {
+    background-color: rgb(234, 255, 226) !important;
+}
+
+.sec1 {
+    width: 100%;
+}
+
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 60px;
+    margin-right: 50px;
+}
+
+.tu{
+    width: 65px;
+    height: auto;
+}
+.t{
+    font-size: larger;
+}
+.tree{
+    width:91px;
+    height: auto;
+}
+.tc{
+    display: flex;
+    justify-content: left;
+    margin-top: -68px;
+    margin-left: 15px;
+}
+.btn1{
+    width: 40px;
+    background-color: rgb(186, 255, 118);
+    color:rgb(0, 60, 255);
+}
+.btn2{
+      width: 40px;
+    background-color: rgb(186, 255, 118);
+    color:rgb(0, 60, 255);
+}
+.btn3{
+      width: 40px;
+    background-color: rgb(186, 255, 118);
+    color:rgb(0, 60, 255);
+}
+
+.tu:hover{
+    transform: scale(1.07);
+    transition:transform 0.2s ease;
+}
+.t:hover{
+    transform: scale(1.07);
+    color:rgb(39, 71, 255);
+    transition:transform 0.2s ease;
+}
+.btn1:hover{
+    transform: scale(1.09);
+    background-color:rgb(137, 255, 113);
+    color: rgb(0, 0, 189);
+}
+.btn2:hover{
+    transform: scale(1.09);
+        background-color:rgb(137, 255, 113);
+    color: rgb(0, 0, 189);
+}
+.btn3:hover{
+    transform: scale(1.09);
+        background-color:rgb(137, 255, 113);
+    color: rgb(0, 0, 189);
+}
+.tree:hover{
+    transform: scale(1.07);
+    transition:transform 0.2s ease;
+}
+.fam{
+    display: flex;
+    justify-content: center;
+}
+.bm{
+    width: 1920px;
+    height:893px;
+}
+.header {
+    border: 4px solid rgb(120, 118, 118);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+ 
+    
+ 
+    padding: 15px 40px; /* Добавляет внутренние отступы, чтобы рамка не зажимала элементы */
+    
+    /* Переносим цвет фона на сам хедер, чтобы он был внутри рамки */
+    background-color: #e2f0d9; 
+}
+
+/* 2. Контейнер для логотипа */
+.tcr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 3. Сама картинка дерева */
+.tre {
+    display: block;
+    height: 85px; /* Жестко задаем высоту картинке, чтобы она не распирала блок */
+    width: auto;  /* Пропорции сохраняются автоматически */
+}
+.tre:hover{
+    transform: scale(1.05);
+        transition:transform 0.2s ease;
+    
+}
+
+/* 4. Текст "Информация" */
+.ju a {
+    text-decoration: none;
+    color: #02533b; /* Ваш фиолетовый цвет текста */
+    
+}
+.te{
+    font-size: x-large;
+    text-decoration: none;
+}
+
+.tcr:hover{
+    transform: scale(1.07);
+}
+.te:hover{
+    color: rgb(0, 60, 255);
+    text-decoration: underline;
+    transform: scale(1.05);
+    display: inline-block; /* Позволяет элементу трансформироваться */
+    transition:transform 0.2s ease; /* Делает увеличение плавным, а не резким */
+}
+/* Главный контейнер */
+.thecubes {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    justify-content: space-around;
+}
+
+/* Настройки для ВСЕХ пяти ссылок сразу */
+.thecubes a {
+    height: 100%;
+    display: block;
+    transition: transform 0.2s ease; /* Плавный возврат в исходный размер */
+}
+
+/* Укрощаем картинки внутри ВСЕХ пяти ссылок */
+.thecubes a img {
+    height: 100%;
+    width: auto; /* Сохраняет пропорции лиц */
+    object-fit: cover; /* Идеально вписывает фото в рамки */
+}
+
+/* Общий эффект увеличения для КАЖДОГО члена семьи */
+.papa:hover, .mama:hover, .sis1:hover, .sis2:hover, .son:hover {
+    transform: scale(1.05);
+}
+
+/* Блок с текстом снизу */
+.t1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.tur:hover {
+    color: rgb(0, 60, 255);
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+.papa:hover{
+    transform: scale(1.05);
+    transition:transform 0.2s ease;
+}
+.mama:hover{
+    transform: scale(1.05);
+    transition:transform 0.2s ease;
+}
+.sis1:hover{
+    transform: scale(1.05);
+    transition:transform 0.2s ease;
+}
+.sis2:hover{
+    transform: scale(1.05);
+    transition:transform 0.2s ease;
+}
+.son:hover{
+    transform: scale(1.05);
+    transition:transform 0.2s ease;
+}
+.t1{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+.t1:hover{
+    color:rgb(0, 60, 255) ;
+    text-decoration: underline;
+    transform: scale(1.05);
+        transition:transform 0.2s ease;
+}
+/* Этот код усмирит картинку сына и вернет ей прежний размер */
+.son img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Чтобы фото не сжималось, а красиво вписывалось */
+}
+.foto11{
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+}
+.tupoi{
+width: 550px;
+height: auto;
+border: 3px solid black;
+}
+.ku{
+
+ margin-left: 180px;
+ font-size: larger;
+}
+.suka{
+    margin-top: 30px;
+}
+.sec2{
+    background-color: rgb(210, 214, 255);
+}
+.mal{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+.trebl{
+    font-size: larger;
+}
+.ju{
+    margin-top: 100px;
+}
+.downpart{
+    margin-top: 60px;
+}
+.tiii{
+    width: 70px;
+    height: auto;
+    border: 2px solid black;
+}
+.tiii:hover{
+      transform: scale(1.05);
+    transition:transform 0.2s ease;
+
+}
+.sidepart{
+    margin-left: 350px;
+   margin-top: -60px;
+}
+.h{
+    margin-left: 380px;
+}
+.h:hover{
+          transform: scale(1.05);
+    transition:transform 0.2s ease;
+}
+.phl1{
+    width: 320px;
+    height: auto;
+}
+.ph1{
+    width: 310px;
+    height: auto;
+}
+.ph2{
+        width: 310px;
+    height: auto;
+}
+.ph3{
+        width: 325px;
+    height: auto;
+}
+.ph4{
+        width: 310px;
+    height: auto;
+}
+.ph5{
+        width: 330px;
+    height: auto;
+}
+.dd{
+  display: flex;
+  margin-top: 84px;
+}
+.gay{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+/* Общие настройки для всей страницы */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Главный блок (фиолетовый фон) */
+.profile-card {
+    display: flex;
+    background-color: #e2e2fa; /* Светло-фиолетовый цвет фона */
+    min-height: 450px;
+}
+
+/* Левая сторона с текстом */
+.profile-info {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Стиль для имени */
+.profile-name {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Стиль для описания */
+.profile-description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 25px;
+    max-width: 500px;
+}
+
+/* Блок с любимым цветом и поколением */
+.profile-details {
+    display: flex;
+    gap: 50px;
+}
+
+.detail-item {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Квадрат любимого цвета */
+.color-box {
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+}
+
+/* Буква поколения */
+.gen-letter {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Правая сторона с главным фото */
+.profile-photo-container {
+    width: 40%;
+    border-left: 2px solid #000000; /* Черная вертикальная черта */
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Фото заполняет блок без искажений */
+    display: block;
+}
+
+/* Секция детских моментов (галерея) */
+.gallery-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Сетка для картинок детства */
+.gallery-grid {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap; /* Если картинок много, они перенесутся на новую строку */
+}
+
+/* Измененный блок в style.css */
+.gallery-item {
+    width: 280px;        /* Было 190px — фото станут шире */
+    height: 200px;       /* Было 140px — фото станут выше */
+    object-fit: cover;   /* Картинки по-прежнему будут аккуратно обрезаться под размер без искажений */
+    border: 1px solid #000;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Главный верхний контейнер */
+.p-card-holder {
+    display: flex;
+    background-color: #e2e2fa; 
+    min-height: 450px;
+    width: 100%;
+}
+
+/* Левая текстовая панель (60% ширины) */
+.p-info-side {
+    width: 60%;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.p-main-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.p-short-story {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 25px;
+    max-width: 500px;
+}
+
+.p-meta-box {
+    display: flex;
+    gap: 50px;
+}
+
+.p-meta-caption {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.p-color-square {
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+}
+
+.p-gen-letter {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Правая панель для фото (40% ширины) */
+.p-photo-side {
+    width: 40%;
+    /* УБРАЛИ ОТСЮДА border-left, чтобы линия не висела посредине */
+    background-color: #e2e2fa;       
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end; /* Фото по-прежнему прижато к правому краю */
+    align-items: center;       
+}
+
+/* Стили для главного изображения */
+.p-hero-image {
+    width: 60%;                /* Ваша ширина фото */
+    height: auto;              /* Автоматическая высота */
+    display: block;
+    
+    /* ТЕПЕРЬ ЛИНЯЯ-РАМКА НАХОДИТСЯ ЗДЕСЬ И ПРИЖАТА СЛЕВА К ФОТО */
+    border-left: 2px solid #000000; 
+}
+
+/* Блок галереи снизу */
+.p-gallery-block {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.p-gallery-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.p-gallery-flex {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.p-gallery-pic {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #000;
+}
+/* Общие настройки для всей страницы */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Главный блок (фиолетовый фон) */
+.fam-hero-block {
+    display: flex;
+    background-color: #e2e2fa;
+    min-height: 450px;
+}
+
+/* Левая сторона с текстом */
+.fam-text-container {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Стиль для имени */
+.fam-member-name {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Стиль для описания */
+.fam-member-bio {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 25px;
+    max-width: 500px;
+}
+
+/* Блок с любимым цветом и поколением */
+.fam-stats-row {
+    display: flex;
+    gap: 50px;
+}
+
+.fam-stat-label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Квадрат любимого цвета */
+.fam-color-indicator {
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+}
+
+/* Буква поколения */
+.fam-gen-badge {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Правая сторона с главным фото */
+.fam-main-photo-wrap {
+    width: 40%;
+    border-left: 2px solid #000000; /* Черная вертикальная черта */
+}
+
+.fam-main-photo-img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Секция детских моментов (галерея) */
+.fam-childhood-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Заголовок "Childhood moments" */
+.fam-childhood-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+/* Увеличенные детские фотографии */
+.fam-childhood-thumb {
+    width: 280px;
+    height: 260px;
+    object-fit: cover;
+    border: 1px solid #000;
+}
+/* Базовые настройки страницы */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Верхний фиолетовый блок */
+.u-main-card {
+    display: flex;
+    background-color: #e2e2fa; 
+    min-height: 450px;
+    width: 100%;
+}
+
+/* Левая текстовая панель */
+.u-text-section {
+    width: 60%;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Имя крупным шрифтом */
+.u-person-name {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Описание/Биография */
+.u-person-bio {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 25px;
+    max-width: 500px;
+}
+
+/* Контейнер для цвета и поколения */
+.u-info-grid {
+    display: flex;
+    gap: 50px;
+}
+
+.u-info-label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Квадрат любимого цвета */
+.u-color-box {
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+}
+
+/* Текст поколения */
+.u-gen-text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Правая панель, где лежит фото */
+.u-photo-section {
+    width: 40%;
+    background-color: #e2e2fa;       
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end; /* Прижимает картинку к правому краю экрана */
+    align-items: center;       /* Центрирует картинку по вертикали */
+}
+
+/* Главная фотография */
+.u-main-avatar {
+    width: 60%;                /* Картинка занимает 60% от ширины правого блока */
+    height: auto;              /* Высота подстраивается автоматически */
+    display: block;
+    
+    /* ЧЕРНАЯ ЛИНИЯ ПРИЖАТА СЛЕВА НАПРЯМУЮ К ФОТОГРАФИИ */
+    border-left: 2px solid #000000; 
+}
+
+/* Нижний блок галереи */
+.u-gallery-wrapper {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Заголовок галереи */
+.u-gallery-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Ряд с детскими фотографиями */
+.u-gallery-row {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Увеличенные детские картинки */
+.u-gallery-item {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #000;
+}
+/* ================= ПЕРВАЯ СТРОКА СЕМЬИ ================= */
+
+/* Главный контейнер */
+.thecubes {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    justify-content: space-around;
+}
+
+/* Настройки для ВСЕХ пяти ссылок сразу */
+.thecubes a {
+    height: 100%;
+    width: 18%; /* Одинаковая ширина для всех */
+    display: block;
+    transition: transform 0.2s ease;
+    background-color: transparent; /* Если хочешь скрыть пустые поля по бокам, оставь transparent. Если хочешь рамку фона, можно поставить #000 */
+}
+
+/* Укрощаем картинки внутри ВСЕХ пяти ссылок */
+.thecubes a img {
+    height: 100%;
+    width: 100%; 
+    object-fit: contain; /* ТЕПЕРЬ ФОТО НЕ ОБРЕЗАЮТСЯ, а полностью помещаются внутрь! */
+}
+
+/* Эффект увеличения */
+.thecubes a:hover {
+    transform: scale(1.05);
+}
+
+
+/* ================= ВТОРАЯ СТРОКА СЕМЬИ ================= */
+
+/* Главный контейнер второй строки */
+.thecubes-2 {
+    margin-top: 40px; 
+    display: flex;
+    width: 100%;
+    height: 30vh; 
+    justify-content: space-around;
+    margin-bottom: 40px; 
+}
+
+/* Настройки для ВСЕХ пяти ссылок второй строки */
+.thecubes-2 a {
+    height: 100%;
+    width: 18%; 
+    display: block;
+    transition: transform 0.2s ease;
+    background-color: transparent;
+}
+
+/* Укрощаем картинки второй строки */
+.thecubes-2 a img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; /* ТЕПЕРЬ ФОТО НЕ ОБРЕЗАЮТСЯ и во второй строке! */
+}
+
+/* Эффект увеличения */
+.thecubes-2 a:hover {
+    transform: scale(1.05);
+}
+/* ================= КАРТОЧКА ОТЦА (FATHER) ================= */
+
+/* Главный контейнер карточки отца */
+.f-main-card {
+    display: flex;
+    width: 100%;
+    background-color: #e2e2fa; /* Такой же нежно-фиолетовый фон */
+}
+
+/* Левая сторона с текстом (60% ширины) */
+.f-text-section {
+    width: 60%;
+    padding: 40px; /* Отступы для текста внутри карточки */
+    box-sizing: border-box;
+}
+
+/* Имя отца */
+.f-person-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+/* Биография отца */
+.f-person-bio {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Контейнер для цвета и поколения */
+.f-info-grid {
+    display: flex;
+    gap: 50px;
+}
+
+.f-info-label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Квадрат любимого цвета */
+.f-color-box {
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+}
+
+/* Текст поколения */
+.f-gen-text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Правая панель, где лежит фото отца */
+.f-photo-section {
+    width: 40%;
+    background-color: #e2e2fa;       
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end; /* Прижимает картинку к правому краю экрана */
+    align-items: center;       /* Центрирует картинку по вертикали */
+}
+
+/* Главная фотография отца */
+.f-main-avatar {
+    width: 60%;                /* Картинка занимает 60% от ширины правого блока */
+    height: auto;              /* Высота подстраивается автоматически */
+    display: block;
+    
+    /* ЧЕРНАЯ ЛИНИЯ ПРИЖАТА СЛЕВА НАПРЯМУЮ К ФОТОГРАФИИ */
+    border-left: 2px solid #000000; 
+}
+
+
+/* ================= ГАЛЕРЕЯ НАСТАЛЬГИИ ОТЦА ================= */
+
+/* Обёртка для всей нижней галереи */
+.f-gallery-wrapper {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Заголовок "Nastolgia" */
+.f-gallery-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Ряд с архивными фотками */
+.f-gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+/* Каждая картинка в галерее отца */
+.f-gallery-item {
+    width: 600px;       /* Точный размер как на скрине */
+    height: auto;      /* Точный размер как на скрине */
+    object-fit: cover;  /* Чтобы архивные фото не искажались */
+    border: 1px solid #000000; /* Тонкая рамочка вокруг мелких фото */
+}
+/* ================= КАРТОЧКА МАМЫ (MAMA) ================= */
+
+/* Главный контейнер карточки мамы */
+.m-main-card {
+    display: flex;
+    width: 100%;
+    background-color: #fbe2fa; /* Нежно-розовый оттенок фона (можно изменить на любой) */
+}
+
+/* Левая сторона с текстом (60% ширины) */
+.m-text-section {
+    width: 60%;
+    padding: 40px; 
+    box-sizing: border-box;
+}
+
+/* Имя мамы */
+.m-person-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+/* Биография мамы */
+.m-person-bio {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Контейнер для цвета и поколения */
+.m-info-grid {
+    display: flex;
+    gap: 50px;
+}
+
+.m-info-label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Квадрат любимого цвета */
+.m-color-box {
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+}
+
+/* Текст поколения */
+.m-gen-text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Правая панель, где лежит фото мамы */
+.m-photo-section {
+    width: 40%;
+    background-color: #fbe2fa;       
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end; /* Прижимает картинку к правому краю экрана */
+    align-items: center;       /* Центрирует картинку по вертикали */
+}
+
+/* Главная фотография мамы */
+.m-main-avatar {
+    width: 60%;                /* Картинка занимает 60% от ширины правого блока */
+    height: auto;              /* Высота подстраивается автоматически */
+    display: block;
+    
+    /* ЧЕРНАЯ ЛИНИЯ ПРИЖАТА СЛЕВА НАПРЯМУЮ К ФОТОГРАФИИ */
+    border-left: 2px solid #000000; 
+}
+
+
+/* ================= ГАЛЕРЕЯ НАСТАЛЬГИИ МАМЫ ================= */
+
+/* Обёртка для всей нижней галереи */
+.m-gallery-wrapper {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Заголовок "Nastolgia" */
+.m-gallery-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Ряд с архивными фотками */
+.m-gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+/* Каждая картинка в галерее мамы */
+.m-gallery-item {
+    width: 500px;       
+    height: auto;      
+    object-fit: cover;  
+    border: 1px solid #000000; 
+}
+/* ================= КАРТОЧКА СЕСТРЫ 1 РЯД 2 (SIS1 ROW 2) ================= */
+
+/* Главный контейнер карточки */
+.s1-2-main-card {
+    display: flex;
+    width: 100%;
+    background-color: #e2faf0; /* Нежно-мятный оттенок фона */
+}
+
+/* Левая сторона с текстом (60% ширины) */
+.s1-2-text-section {
+    width: 60%;
+    padding: 40px; 
+    box-sizing: border-box;
+}
+
+/* Имя */
+.s1-2-person-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+/* Биография */
+.s1-2-person-bio {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Контейнер для цвета и поколения */
+.s1-2-info-grid {
+    display: flex;
+    gap: 50px;
+}
+
+.s1-2-info-label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Квадрат любимого цвета */
+.s1-2-color-box {
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+}
+
+/* Текст поколения */
+.s1-2-gen-text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Правая панель, где лежит фото */
+.s1-2-photo-section {
+    width: 40%;
+    background-color: #e2faf0;       
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end; /* Прижимает картинку к правому краю экрана */
+    align-items: center;       /* Центрирует картинку по вертикали */
+}
+
+/* Главная фотография */
+.s1-2-main-avatar {
+    width: 60%;                
+    height: auto;              
+    display: block;
+    
+    /* ЧЕРНАЯ ЛИНИЯ ПРИЖАТА СЛЕВА НАПРЯМУЮ К ФОТОГРАФИИ */
+    border-left: 2px solid #000000; 
+}
+
+
+/* ================= ГАЛЕРЕЯ НАСТАЛЬГИИ СЕСТРЫ 1 РЯД 2 ================= */
+
+/* Обёртка для всей нижней галереи */
+.s1-2-gallery-wrapper {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Заголовок "Nastolgia" */
+.s1-2-gallery-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Ряд с архивными фотками */
+.s1-2-gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+/* Каждая картинка в галерее */
+.s1-2-gallery-item {
+    width: 200px;       
+    height: 200px;      
+    object-fit: cover;  
+    border: 1px solid #000000; 
+}
+/* ================= КАРТОЧКА СЕСТРЫ 2 РЯД 2 (SIS2 ROW 2) ================= */
+
+/* ================= УНИВЕРСАЛЬНЫЙ ШАБЛОН ДЛЯ ВСЕХ ЛИЧНЫХ КАРТОЧЕК ================= */
+
+/* Главный контейнер карточки (светло-бежевый/сиреневый фон на весь экран) */
+.u-main-card {
+    display: flex;
+    width: 100%;
+    background-color: #fbe2fa; /* Можешь поменять на #e2e2fa, если нужен сиреневый */
+    box-sizing: border-box;
+}
+
+/* Левая сторона с текстом (60% ширины) */
+.u-text-section {
+    width: 60%;
+    padding: 40px; 
+    box-sizing: border-box;
+}
+
+/* Имя члена семьи */
+.u-person-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+/* Биография */
+.u-person-bio {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Контейнер для цвета и поколения */
+.u-info-grid {
+    display: flex;
+    gap: 50px;
+}
+
+.u-info-label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Квадрат любимого цвета */
+.u-color-box {
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+}
+
+/* Текст поколения */
+.u-gen-text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Правая панель, где лежит главное фото */
+.u-photo-section {
+    width: 40%;
+    background-color: #fbe2fa; /* Должен совпадать с фоном карточки */      
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end; /* Прижимает картинку к правому краю */
+    align-items: center;       /* Центрирует по вертикали */
+}
+
+/* Главная фотография */
+.u-main-avatar {
+    width: 60%;                
+    height: auto;              
+    display: block;
+    border-left: 2px solid #000000; /* Чёрная линия слева от фото */
+}
+
+/* ================= НИЖНЯЯ ГАЛЕРЕЯ НАСТАЛЬГИИ ================= */
+
+.u-gallery-wrapper {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.u-gallery-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.u-gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.u-gallery-item {
+    width: 150px;       
+    height: 100px;      
+    object-fit: cover;  
+    border: 1px solid #000000; 
+}
+/* ================= ЛИЧНАЯ КАРТОЧКА СЫНА (РЯД 2) ================= */
+
+/* Главный контейнер карточки сына */
+.son2-main-card {
+    display: flex;
+    width: 100%;
+    background-color: #e2f0fa; /* Нежно-синий мужской оттенок фона */
+    box-sizing: border-box;
+}
+
+/* Левая сторона с текстом (60% ширины) */
+.son2-text-section {
+    width: 60%;
+    padding: 40px; 
+    box-sizing: border-box;
+}
+
+/* Имя сына */
+.son2-person-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+/* Биография сына */
+.son2-person-bio {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Контейнер для цвета и поколения */
+.son2-info-grid {
+    display: flex;
+    gap: 50px;
+}
+
+.son2-info-label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Квадрат любимого цвета */
+.son2-color-box {
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+}
+
+/* Текст поколения */
+.son2-gen-text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Правая панель, где лежит главное фото сына */
+.son2-photo-section {
+    width: 40%;
+    background-color: #e2f0fa; /* Должен совпадать с фоном карточки */      
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end; /* Прижимает картинку к правому краю */
+    align-items: center;       /* Центрирует по вертикали */
+}
+
+/* Главная фотография сына */
+.son2-main-avatar {
+    width: 60%;                
+    height: auto;              
+    display: block;
+    border-left: 2px solid #000000; /* Чёрная линия слева от фото */
+}
+
+
+/* ================= ГАЛЕРЕЯ НАСТАЛЬГИИ СЫНА ================= */
+
+/* Обёртка для всей нижней галереи сына */
+.son2-gallery-wrapper {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Заголовок "Childhood moments" */
+.son2-gallery-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Ряд с архивными фотками сына */
+.son2-gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+/* Каждая картинка в его галерее */
+.son2-gallery-item {
+    width: 50px;       
+    height: auto;      
+    object-fit: cover;  
+    border: 1px solid #000000; 
+}
+/* ПРИНУДИТЕЛЬНОЕ УВЕЛИЧЕНИЕ КАРТИНОК ДЛЯ ВСЕХ ГАЛЕРЕЙ */
+
+/* Для универсального класса */
+.u-gallery-item {
+    width: 250px !important;    /* Жестко задаем ширину */
+    height: 180px !important;   /* Жестко задаем высоту */
+    object-fit: cover !important;
+    border: 2px solid #000000 !important;
+}
+
+/* Для класса сына (на случай, если остался он) */
+.son2-gallery-item {
+    width: 250px !important;    
+    height: 180px !important;   
+    object-fit: cover !important;
+    border: 2px solid #000000 !important;
+}
+
+/* Для класса сестры s2-2- (на случай, если в HTML остался старый класс) */
+.s2-2-gallery-item {
+    width: 250px !important;    
+    height: 180px !important;   
+    object-fit: cover !important;
+    border: 2px solid #000000 !important;
+}
+/* ================= ИСПРАВЛЕНИЕ ГАЛЕРЕИ ДЛЯ КАНИЕТА (ФИНАЛ) ================= */
+
+/* Настраиваем заголовок "Childhood moments" */
+.gay h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-family: sans-serif;
+}
+
+/* Настраиваем контейнер ряда, где лежат картинки */
+.dd {
+    display: flex !important;
+    justify-content: center !important; /* Центрируем фотки */
+    gap: 20px !important;               /* Промежутки между рамками сделали чуть больше */
+    flex-wrap: wrap !important;         /* РАЗРЕШАЕМ ПЕРЕНОС НА НОВУЮ СТРОКУ */
+    padding: 0 20px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Принудительно укрощаем ВСЕ картинки внутри блока .dd */
+.dd img {
+    width: 250px !important;      /* Честная крупная ширина */
+    height: 180px !important;     /* Честная высота */
+    flex-shrink: 0 !important;    /* ЗАПРЕЩАЕМ БРАУЗЕРУ СЖИМАТЬ КАРТИНКИ */
+    object-fit: cover !important; /* Картинка идеально заполняет рамку без искажений */
+    border: 2px solid #000000 !important; /* Аккуратная черная рамка */
+    border-radius: 4px !important; 
+    display: block !important;
+}
+/* Главный контейнер второй строки */
+.thecubes-3 {
+    margin-top: 40px; 
+    display: flex;
+    width: 100%;
+    height: 30vh; 
+    justify-content: space-around;
+    margin-bottom: 40px; 
+}
+
+/* Настройки для ВСЕХ пяти ссылок второй строки */
+.thecubes-3 a {
+    height: 100%;
+    width: 18%; 
+    display: block;
+    transition: transform 0.2s ease;
+    background-color: transparent;
+}
+
+/* Укрощаем картинки второй строки */
+.thecubes-3 a img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; /* ТЕПЕРЬ ФОТО НЕ ОБРЕЗАЮТСЯ и во второй строке! */
+}
+
+/* Эффект увеличения */
+.thecubes-3 a:hover {
+    transform: scale(1.05);
+}
+/* ========================================================
+   КАРТОЧКА: ОТЦА №3 (Полная копия стилистики вашего фото)
+   ======================================================== */
+
+/* Главный контейнер карточки Отца №3 */
+.f3-main-card {
+    display: flex;
+    width: 100%;
+    background-color: #f5f5f5; /* Базовый фоновый цвет (измените при необходимости) */
+    box-sizing: border-box;
+}
+
+/* Левая сторона с текстом (60% ширины) */
+.f3-text-section {
+    width: 60%;
+    padding: 40px; 
+    box-sizing: border-box;
+}
+
+/* Имя Отца №3 */
+.f3-person-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+/* Биография Отца №3 */
+.f3-person-bio {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Контейнер для цвета и поколения */
+.f3-info-grid {
+    display: flex;
+    gap: 50px;
+}
+
+.f3-info-label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Квадрат любимого цвета */
+.f3-color-box {
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+}
+
+/* Текст поколения */
+.f3-gen-text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Правая панель, где лежит главное фото Отца №3 */
+.f3-photo-section {
+    width: 40%;
+    background-color: #f5f5f5; /* Должен совпадать с фоном карточки f3-main-card */      
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end; /* Прижимает картинку строго к правому краю */
+    align-items: center;       /* Центрирует по вертикали */
+}
+
+/* Главная фотография Отца №3 */
+.f3-main-avatar {
+    width: 60%;                
+    height: auto;              
+    display: block;
+    border-left: 2px solid #000000; /* Чёрная линия строго слева от фото, как на вашем примере */
+}
+
+/* ========================================================
+   НИЖНЯЯ ГАЛЕРЕЯ ДЕТСТВА (Nostalgia) ДЛЯ ОТЦА №3
+   ======================================================== */
+.f3-gallery-wrapper {
+    margin-top: 40px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    
+}
+
+.f3-gallery-title {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.f3-gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.f3-gallery-item {
+    width: 18%; /* Равномерно распределяет 5 картинок в один ряд */
+    height: auto;
+    object-fit: cover;
+    display: block;
+     border: 2px solid #000000
+}
+/* ========================================================
+   КАРТОЧКА: МАМЫ №3 (Полная копия вашей структуры)
+   ======================================================== */
+
+
+/* ========================================================
+   КАРТОЧКА: МАМЫ №3 (Идеальная структура один в один)
+   ======================================================== */
+
+/* Главный контейнер карточки Мамы №3 */
+.m3-main-card {
+    display: flex;
+    width: 100%;
+    background-color: #fceef0; /* Нежный розовый оттенок фона карточки */
+    box-sizing: border-box;
+}
+
+/* Левая сторона с текстом (60% ширины) */
+.m3-text-section {
+    width: 60%;
+    padding: 40px; 
+    box-sizing: border-box;
+}
+
+/* Имя Мамы №3 */
+.m3-person-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+/* Биография Мамы №3 */
+.m3-person-bio {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+/* Контейнер для цвета и поколения */
+.m3-info-grid {
+    display: flex;
+    gap: 50px;
+}
+
+.m3-info-label {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+/* Квадрат любимого цвета */
+.m3-color-box {
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+}
+
+/* Текст поколения */
+.m3-gen-text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+    font-family: sans-serif;
+}
+
+/* Правая панель, где лежит главное фото Мамы №3 */
+.m3-photo-section {
+    width: 40%;
+    background-color: #fceef0; /* Точно совпадает с фоном карточки */      
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end; /* Прижимает картинку строго к правому краю */
+    align-items: center;       /* Центрирует по вертикали */
+}
+
+/* Главная фотография Мамы №3 */
+.m3-main-avatar {
+    width: 60%;                
+    height: auto;              
+    display: block;
+    border-left: 2px solid #000000; /* Фирменная черная линия строго слева от фото */
+}
+
+/* ========================================================
+   НИЖНЯЯ ГАЛЕРЕЯ ДЕТСТВА (Nostalgia) — СТРОГО СНИЗУ ВНЕ БЛОКА
+   ======================================================== */
+.m3-gallery-wrapper {
+    margin-top: 40px;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.m3-gallery-title {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.m3-gallery-row {
+    display: flex;
+   justify-content: center;
+    
+    gap: 15px;
+}
+
+.m3-gallery-item {
+    width: 18%; /* Идеально для красивого отображения картинок в ряд */
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+.hope{
+border: 2px solid #000000;
+width: 500px;
+height: auto;
+}
+/* ========================================================
+   КАРТОЧКА: СЕСТРА №1, РЯД №3 (Полная копия структуры)
+   ======================================================== */
+
+/* Главный контейнер карточки */
+.s1r3-main-card {
+    display: flex;
+    width: 100%;
+    background-color: #f3e5f5; /* Нежный пастельно-сиреневый оттенок фона */
+    box-sizing: border-box;
+}
+
+/* Левая сторона с текстом (60% ширины) */
+.s1r3-text-section {
+    width: 60%;
+    padding: 40px; 
+    box-sizing: border-box;
+}
+
+/* Имя */
+.s1r3-person-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+/* Биография */
+.s1r3-person-bio {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+/* Контейнер для цвета и поколения */
+.s1r3-info-grid {
+    display: flex;
+    gap: 50px;
+}
+
+.s1r3-info-label {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+/* Квадрат любимого цвета */
+.s1r3-color-box {
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+}
+
+/* Текст поколения */
+.s1r3-gen-text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+    font-family: sans-serif;
+}
+
+/* Правая панель главного фото */
+.s1r3-photo-section {
+    width: 30%;
+    background-color: #f3e5f5; /* Совпадает с фоном карточки */      
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end; /* Прижимает картинку строго к правому краю */
+    align-items: center;       /* Центрирует по вертикали */
+    padding-right: 40px;       /* Отступ справа, чтобы фото не липло к краю */
+}
+
+/* Главная фотография с полной чёрной обводкой */
+.s1r3-main-avatar {
+    width: 75%;                
+    height: auto;              
+    display: block;
+    border: 2px solid #000000; /* Чёрная обводка со всех сторон */
+}
+
+/* ========================================================
+   НИЖНЯЯ ГАЛЕРЕЯ ДЕТСТВА (Nostalgia)
+   ======================================================== */
+.s1r3-gallery-wrapper {
+    margin-top: 40px;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.s1r3-gallery-title {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.s1r3-gallery-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+/* Картинки в галерее с полной чёрной обводкой */
+.s1r3-gallery-item {
+    width: 18%; 
+    height: 550px;
+    object-fit: cover;
+    display: block;
+    border: 2px solid #000000; /* Чёрная обводка со всех сторон */
+}
+/* ========================================================
+   КАРТОЧКА: СЕСТРА №2, РЯД №3 (Полная копия структуры)
+   ======================================================== */
+
+/* Главный контейнер карточки */
+.s2r3-main-card {
+    display: flex;
+    width: 100%;
+    background-color: #fff3e0; /* Пастельно-оранжевый/абрикосовый оттенок фона */
+    box-sizing: border-box;
+}
+
+/* Левая сторона с текстом (60% ширины) */
+.s2r3-text-section {
+    width: 60%;
+    padding: 40px; 
+    box-sizing: border-box;
+}
+
+/* Имя */
+.s2r3-person-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+/* Биография */
+.s2r3-person-bio {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+/* Контейнер для цвета и поколения */
+.s2r3-info-grid {
+    display: flex;
+    gap: 50px;
+}
+
+.s2r3-info-label {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+/* Квадрат любимого цвета */
+.s2r3-color-box {
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+}
+
+/* Текст поколения */
+.s2r3-gen-text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+    font-family: sans-serif;
+}
+
+/* Правая панель главного фото */
+.s2r3-photo-section {
+    width: 40%;
+    background-color: #fff3e0; /* Совпадает с фоном карточки */      
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end; /* Прижимает картинку строго к правому краю */
+    align-items: center;       /* Центрирует по вертикали */
+    padding-right: 40px;       /* Отступ справа, чтобы фото не липло к краю */
+}
+
+/* Главная фотография с полной чёрной обводкой */
+.s2r3-main-avatar {
+    width: 75%;                
+    height: auto;              
+    display: block;
+    border: 2px solid #000000; /* Чёрная обводка со всех сторон */
+}
+
+/* ========================================================
+   НИЖНЯЯ ГАЛЕРЕЯ ДЕТСТВА (Nostalgia)
+   ======================================================== */
+.s2r3-gallery-wrapper {
+    margin-top: 40px;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.s2r3-gallery-title {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.s2r3-gallery-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+/* Картинки в галерее с полной чёрной обводкой */
+.s2r3-gallery-item {
+    width: 18%; 
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border: 2px solid #000000; /* Чёрная обводка со всех сторон */
+}
+/* ========================================================
+   КАРТОЧКА: СЫН №3, РЯД №3 (Полная копия структуры)
+   ======================================================== */
+
+/* Главный контейнер карточки */
+.son3r3-main-card {
+    display: flex;
+    width: 100%;
+    background-color: #e0f2f1; /* Пастельно-бирюзовый свежий мужской оттенок фона */
+    box-sizing: border-box;
+}
+
+/* Левая сторона с текстом (60% ширины) */
+.son3r3-text-section {
+    width: 60%;
+    padding: 40px; 
+    box-sizing: border-box;
+}
+
+/* Имя */
+.son3r3-person-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+/* Биография */
+.son3r3-person-bio {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+/* Контейнер для цвета и поколения */
+.son3r3-info-grid {
+    display: flex;
+    gap: 50px;
+}
+
+.son3r3-info-label {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+/* Квадрат любимого цвета */
+.son3r3-color-box {
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+}
+
+/* Текст поколения */
+.son3r3-gen-text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+    font-family: sans-serif;
+}
+
+/* Правая панель главного фото */
+.son3r3-photo-section {
+    width: 40%;
+    background-color: #e0f2f1; /* Совпадает с фоном карточки */      
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end; /* Прижимает картинку строго к правому краю */
+    align-items: center;       /* Центрирует по вертикали */
+    padding-right: 40px;       /* Отступ справа, чтобы фото не липло к краю */
+}
+
+/* Главная фотография с полной чёрной обводкой */
+.son3r3-main-avatar {
+    width: 75%;                
+    height: auto;              
+    display: block;
+    border: 2px solid #000000; /* Чёрная обводка со всех сторон */
+}
+
+/* ========================================================
+   НИЖНЯЯ ГАЛЕРЕЯ ДЕТСТВА (Nostalgia)
+   ======================================================== */
+.son3r3-gallery-wrapper {
+    margin-top: 40px;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.son3r3-gallery-title {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.son3r3-gallery-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+/* Картинки в галерее с полной чёрной обводкой */
+.son3r3-gallery-item {
+    width: 18%; 
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border: 2px solid #000000; /* Чёрная обводка со всех сторон */
+}
+/* Контейнер для новой верхней строки из 4 человек */
+.thecubes-top {
+    display: flex;               /* Выстраиваем карточки в один ряд */
+    justify-content: center;     /* СМЕЩАЕТ ВСЮ СТРОКУ В ЦЕНТР, убирая пустоту по бокам */
+    gap: 200px;                   /* Одинаковое расстояние между карточками */
+    margin: 30px auto;           /* Отступы сверху/снизу и центрирование блока на странице */
+    width: 100%;
+    max-width: 1200px;           /* Ограничиваем общую ширину, чтобы строка не растягивалась слишком сильно */
+}
+
+/* Общие стили для ссылок-карточек в этой строке */
+.thecubes-top a {
+    display: block;
+    /* ЗАДАЕМ СТРОГИЙ ОДИНАКОВЫЙ РАЗМЕР ДЛЯ ВСЕХ КАРТОЧЕК */
+    width: 200px;                /* Ширина карточки (можно настроить, например, 180px или 220px) */
+    height: 250px;               /* Высота карточки (сделайте чуть больше ширины для красивого прямоугольника) */
+    overflow: hidden;            /* Прячем всё, что выходит за рамки */
+    border: 2px solid #000000;   /* Опционально: аккуратная черная рамка, как на внутренних страницах */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Мягкая тень, чтобы карточки выделялись */
+    transition: transform 0.2s ease; /* Плавность эффекта наведения */
+}
+
+/* Эффект увеличения при наведении мышки */
+.thecubes-top a:hover {
+    transform: scale(1.05);
+}
+
+/* МАГИЯ ДЛЯ КАРТИНОК: Делает их строго одного размера */
+.thecubes-top a img {
+    width: 100%;                 /* Картинка заполняет всю ширину рамки */
+    height: 100%;                /* Картинка заполняет всю высоту рамки */
+    object-fit: cover;           /* ИДЕАЛЬНО ОБРЕЗАЕТ И МАСШТАБИРУЕТ любое фото под размер рамки без сжатия лиц */
+    display: block;
+}
+/* Базовые настройки страницы */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Главный верхний контейнер карточки (светло-фиолетовый блок) */
+.fam-member1-container {
+    display: flex;
+    background-color: #e2e2fa; 
+    min-height: 450px;
+    width: 100%;
+}
+
+/* Левая текстовая панель (занимает ровно 60% ширины) */
+.fam-member1-text-zone {
+    width: 60%;
+    padding: 40px;
+    box-sizing: border-box; /* Чтобы внутренние отступы не ломали ширину */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Имя члена семьи крупным шрифтом */
+.fam-member1-name {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Стиль текста описания / биографии */
+.fam-member1-bio {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 25px;
+    max-width: 550px;
+}
+
+/* Ряд параметров (цвет и поколение) */
+.fam-member1-stats-row {
+    display: flex;
+    gap: 50px;
+}
+
+.fam-member1-label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Прямоугольник для любимого цвета */
+.fam-member1-color-box {
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+}
+
+/* Текст поколения */
+.fam-member1-gen-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Правая панель для фотографии (занимает ровно 40% ширины) */
+.fam-member1-photo-zone {
+    width: 40%;
+    background-color: #e2e2fa;       
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end; /* Сдвигает уменьшенную картинку плотно в правый край экрана */
+    align-items: center;       /* Центрирует картинку по вертикали */
+}
+
+/* Главное изображение внутри блока */
+.fam-member1-main-img {
+    width: 60% !important;     /* Картинка занимает 60% от отведенного ей блока */
+    height: auto !important;   /* Высота масштабируется автоматически */
+    display: block;
+    
+    /* ЧЕРНАЯ ЛИНИЯ-РАМКА, ПРИЖАТАЯ СТРОГО К ЛЕВЫМУ КРАЮ ФОТОГРАФИИ */
+    border-left: 2px solid #000000 !important; 
+}
+
+/* Секция ностальгической галереи (снизу) */
+.fam-member1-gallery-section {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 900px;          
+    margin: 0 auto;            /* Центрируем всю секцию */
+}
+
+/* Заголовок "Early family moments" */
+.fam-member1-gallery-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+/* Сетка, оптимизированная строго под 2 фотографии */
+.fam-member1-gallery-grid {
+    display: flex;
+    gap: 30px;                 /* Отступ между двумя фото */
+    justify-content: center;   /* Выравнивает обе фотографии строго по центру страницы */
+    align-items: center;
+    flex-wrap: wrap;           /* Чтобы на маленьких экранах они аккуратно переносились */
+}
+
+/* Увеличенные ностальгические фотографии (сохранили твои 280x200px) */
+.fam-member1-gallery-item {
+    width: 280px !important;
+    height: 200px !important;
+    object-fit: cover;         /* Заполнение рамки без искажения пропорций */
+    border: 1px solid #000000;
+}
+/* Базовые настройки страницы */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* ==========================================================================
+   1. БАЗОВЫЕ НАСТРОЙКИ СТРАНИЦЫ
+   ========================================================================== */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* ==========================================================================
+   2. ВЕРХНИЙ БЛОК (КАРТОЧКА БАБУШКИ)
+   ========================================================================== */
+/* Главный контейнер (фиолетовый блок) */
+.fam-member2-container {
+    display: flex;
+    background-color: #e2e2fa; 
+    min-height: 450px;
+    width: 100%;
+}
+
+/* Левая сторона с текстом (занимает ровно 60% ширины) */
+.fam-member2-text-zone {
+    width: 60%;
+    padding: 40px;
+    box-sizing: border-box; /* Защита от деформации блока из-за отступов */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Имя члена семьи */
+.fam-member2-name {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Текст биографии / описания */
+.fam-member2-bio {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 25px;
+    max-width: 550px;
+}
+
+/* Ряд параметров (цвет и поколение) */
+.fam-member2-stats-row {
+    display: flex;
+    gap: 50px;
+}
+
+.fam-member2-label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Прямоугольник для любимого цвета */
+.fam-member2-color-box {
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+}
+
+/* Текст поколения */
+.fam-member2-gen-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Правая сторона для главного фото (занимает ровно 40% ширины) */
+.fam-member2-photo-zone {
+    width: 40%;
+    background-color: #e2e2fa;       
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end; /* Сдвигает уменьшенную картинку в правый край экрана */
+    align-items: center;       /* Центрирует картинку по вертикали */
+}
+
+/* Сама главная картинка внутри правого блока */
+.fam-member2-main-img {
+    width: 60% !important;     /* Картинка занимает 60% от отведенного ей блока */
+    height: auto !important;   /* Высота подстраивается автоматически */
+    display: block;
+    
+    /* Рамка-линия, прижатая строго к левому краю фотографии */
+    border-left: 2px solid #000000 !important; 
+}
+
+/* ==========================================================================
+   3. НИЖНЯЯ ГАЛЕРЕЯ (НОСТАЛЬГИЧЕСКИЕ ФОТО В ОДИН РЯД)
+   ========================================================================== */
+/* Секция всей галереи */
+.fam-member2-gallery-section {
+    padding: 60px 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Заголовок галереи */
+.fam-member2-gallery-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+/* Флекс-сетка, которая выстраивает ВСЕ изображения строго в один ряд */
+.fam-member2-gallery-grid {
+    display: flex;
+    gap: 20px;                 /* Отступ между фотографиями */
+    justify-content: center;   /* Выравнивает ряд по центру экрана */
+    align-items: center;
+    
+    /* ЖЕСТКИЕ ПРАВИЛА ДЛЯ ОДНОГО РЯДА */
+    flex-wrap: nowrap !important; /* Полный запрет переносить картинки на новую строку */
+    overflow-x: auto;             /* Включает боковую прокрутку, если фото не влезут в экран */
+    padding: 15px;
+}
+
+/* Увеличенные архивные фотографии (сохранили пропорции 280х200px) */
+.fam-member2-gallery-item {
+    width: 280px !important;
+    height: 200px !important;
+    object-fit: cover;         /* Фотография аккуратно обрезается, не растягиваясь */
+    border: 1px solid #000000;
+    
+    /* ЗАЩИТА РАЗМЕРА */
+    flex-shrink: 0 !important; /* Запрещает картинкам сплющиваться под ширину экрана */
+}
+/* ==========================================================================
+   1. БАЗОВЫЕ НАСТРОЙКИ СТРАНИЦЫ
+   ========================================================================== */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* ==========================================================================
+   2. ВЕРХНИЙ БЛОК ПРОФИЛЯ
+   ========================================================================== */
+/* Главный контейнер (фиолетовый блок) */
+.fam-member3-container {
+    display: flex;
+    background-color: #e2e2fa; 
+    min-height: 450px;
+    width: 100%;
+}
+
+/* Левая сторона с текстом (занимает ровно 60% ширины) */
+.fam-member3-text-zone {
+    width: 60%;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Имя */
+.fam-member3-name {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Описание */
+.fam-member3-bio {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 25px;
+    max-width: 550px;
+}
+
+/* Ряд параметров */
+.fam-member3-stats-row {
+    display: flex;
+    gap: 50px;
+}
+
+.fam-member3-label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Квадрат любимого цвета */
+.fam-member3-color-box {
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+}
+
+/* Текст поколения */
+.fam-member3-gen-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Правая сторона для главного фото (занимает ровно 40% ширины) */
+.fam-member3-photo-zone {
+    width: 40%;
+    background-color: #e2e2fa;       
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end; /* Прижимает картинку в самый правый край экрана */
+    align-items: center;       /* Центрирует картинку по вертикали */
+}
+
+/* Сама главная картинка */
+.fam-member3-main-img {
+    width: 60% !important;     /* Картинка занимает 60% от блока */
+    height: auto !important;   /* Высота авто */
+    display: block;
+    
+    /* ЧЕРНАЯ ЛИНИЯ-РАМКА ПРИЖАТА СЛЕВА К ФОТО */
+    border-left: 2px solid #000000 !important; 
+}
+
+/* ==========================================================================
+   3. НИЖНЯЯ ГАЛЕРЕЯ (КАРТИНКИ ЖЕСТКО В ОДИН РЯД)
+   ========================================================================== */
+.fam-member3-gallery-section {
+    padding: 60px 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.fam-member3-gallery-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+/* Сетка, выстраивающая все фото строго в один ряд */
+.fam-member3-gallery-grid {
+    display: flex;
+    gap: 20px;                 /* Отступ между фото */
+    justify-content: center;   /* Выравнивает ряд по центру экрана */
+    align-items: center;
+    
+    /* ЖЕСТКИЙ ЗАПРЕТ НА ПЕРЕНОС СТРОК */
+    flex-wrap: nowrap !important; 
+    overflow-x: auto;             /* Скролл вбок, если картинок много */
+    padding: 15px;
+}
+
+/* Увеличенные архивные фотографии (280x200px) */
+.fam-member3-gallery-item {
+    width: 280px !important;
+    height: 200px !important;
+    object-fit: cover;         
+    border: 1px solid #000000;
+    
+    /* ЗАЩИТА ОТ СЖАТИЯ */
+    flex-shrink: 0 !important;   /* Фото не сплющатся */
+}
+/* Контейнер строки для 2 человек */
+.thecubes-two-members {
+    display: flex;               /* Выстраиваем фото в ряд */
+    justify-content: center;     /* МАГИЯ: Сдвигает обе карточки ровно в центр строки */
+    gap: 100px;                   /* Промежуток между двумя карточками */
+    margin: 40px auto;           /* Отступы сверху/снизу от других семей и центровка строки */
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Карточки-ссылки для этой строки */
+.thecubes-two-members a {
+    display: block;
+    width: 200px;                /* Точно такой же размер, как у верхних строк */
+    height: 250px;
+    overflow: hidden;   /* Черная обводка */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+/* Эффект легкого увеличения при наведении мышки */
+.thecubes-two-members a:hover {
+    transform: scale(1.05);
+}
+
+/* Сами картинки внутри карточек */
+.thecubes-two-members a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;           /* Картинка идеально заполняет рамку без сжатия */
+    display: block;
+}
+
+/* Базовый сброс отступов */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #ffffff;
+}
+
+/* ГЛАВНЫЙ ВЕРХНИЙ БЛОК (Делит экран на 60% текста и 40% фото) */
+.s2r3-main-card {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Нежно-фиолетовый фон верхней плашки */
+.r4-bg {
+    background-color: #d1cbf5;
+}
+
+/* Левая сторона с текстом (60% ширины) */
+.s2r3-text-section {
+    width: 60%;
+    padding: 60px 40px 60px 60px; /* Свободные просторные отступы */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Имя члена семьи */
+.s2r3-person-name {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Биография / Описание */
+.s2r3-person-bio {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 35px;
+    max-width: 550px;
+}
+
+/* Сетка для параметров цвета и поколения */
+.profile-details {
+    display: flex;
+    gap: 40px;
+}
+
+/* Метка "fav color:" */
+.detail-item {
+    font-size: 13px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+/* Метка "generation:" */
+.s2r3-info-label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+/* Квадратик любимого цвета */
+.color-box {
+    width: 45px;
+    height: 35px;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+}
+
+/* Текст поколения */
+.s2r3-gen-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 35px;
+}
+
+/* Правая сторона для фото (40% ширины) */
+.s2r3-photo-section {
+    width: 40%;
+    align-self: stretch; /* Растягивает блок на всю высоту текстовой части */
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Главная фотография — ИДЕАЛЬНО КОНТУР В КОНТУР */
+.s2r3-main-avatar {
+    width: 30px;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Фото полностью заполняет правую часть без искажений */
+}
+
+
+/* --- НИЖНЯЯ ГАЛЕРЕЯ ВОСПОМИНАНИЙ --- */
+
+/* Обертка всей галереи под фиолетовым блоком */
+.s2r3-gallery-wrapper {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Заголовок над картинками */
+.s2r3-gallery-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+/* Контейнер-строка для картинок */
+/* Контейнер-строка для картинок */
+.s2r3-gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Немного уменьшили отступ, чтобы картинкам было просторнее */
+    max-width: 100%; /* Позволяет контейнеру использовать всю доступную ширину */
+    margin: 0 auto;
+    flex-wrap: nowrap; /* ИСПРАВЛЕНИЕ: строго запрещает перенос картинок на новую строку */
+}
+
+/* Каждая картинка в нижней галерее */
+.s2r3-gallery-item {
+    width: 260px;
+    height: 190px;
+    min-width: 0; /* Важнейшее свойство: позволяет Flexbox сжимать картинки внутри nowrap */
+    object-fit: cover;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #ffffff;
+}
+
+/* Верхняя главная карточка */
+.s2r3-main-card {
+    display: flex;
+    width: 100%;
+    min-height: 450px;
+    box-sizing: border-box;
+}
+
+/* Цвет фона верхней плашки */
+.r4-bg {
+    background-color: #d1cbf5;
+}
+
+/* Левая сторона контента */
+.s2r3-text-section {
+    width: 60%;
+    padding: 80px 40px 60px 60px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.s2r3-person-name {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.s2r3-person-bio {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 35px;
+    max-width: 550px;
+}
+
+.profile-details {
+    display: flex;
+    gap: 40px;
+}
+
+.detail-item, .s2r3-info-label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.color-box {
+    width: 45px;
+    height: 35px;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+}
+
+.s2r3-gen-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 35px;
+}
+
+/* Правая сторона контента под фото */
+.s2r3-photo-section {
+    width: 40%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Главное фото контур в контур */
+.s2r3-main-avatar {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Нижняя зона воспоминаний */
+.s2r3-gallery-wrapper {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.s2r3-gallery-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+/* Принудительный один ряд для 5 фото */
+.s2r3-gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    max-width: 100%;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+}
+
+.s2r3-gallery-item {
+    width: 260px;
+    height: 190px;
+    min-width: 0;
+    object-fit: cover;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+}
+.gen{
+    position: relative;
+    margin-top: 125px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.gen-link{
+    display: inline-block;
+}
+.uop{
+    display: block;
+    width: 500px;
+    height: auto;
+}
+.huu{
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+.huu :hover{
+     transform: scale(1.05);
+      color: rgb(0, 0, 189);
+      text-decoration: underline;
+         transition: transform 0.3s ease;
+}
+.gen :hover{
+  transform: scale(1.05);
+     transition: transform 0.3s ease;
+}
+.team{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.team-link{
+    display: inline-block;
+}
+.yep{
+    display: block;
+    width: 500px;
+    height: auto;
+}
+.team :hover{
+     transform: scale(1.05);
+     transition: transform 0.3s ease;
+}
+.Memoryess{
+    position: relative;
+    align-items: center;
+display: flex;
+justify-content: center;
+margin-bottom: 100px;
+}
+.Memoryess-link{
+    display: inline-block;
+}
+.yepo{
+    width: 500px;
+    display: block;
+}
+.Memoryess :hover{
+      transform: scale(1.05);
+     transition: transform 0.3s ease;
+}
+.ggg{
+    display: flex;
+    justify-content: center;
+}
+.ggg2{
+    display: flex;
+    justify-content: center;
+}
+.ggg3{
+    display: flex;
+    justify-content: center;
+    margin-top: 87px;
+}
+.ggg4{
+    display: flex;
+    justify-content: center;
+    margin-top: 87px;
+}
+.ggg5{
+    display: flex;
+    justify-content: center;
+}
+.ggg6{
+    display: flex;
+    justify-content: center;
+}
+.ttt{
+    display: flex;
+    justify-content: center;
+}
+.ttt2{
+    display: flex;
+    justify-content: center;
+}
+.ttt3{
+     display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.ttt4{
+     display: flex;
+    justify-content: center;
+}
+.ttt5{
+       display: flex;
+    justify-content: center;
+}
+.ttt6{
+      display: flex;
+    justify-content: center;
+}
+.ttt10{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cool{
+    display: flex;
+    justify-content: center;
+}
+.eee{
+    width: 1920px;
+    height: auto;
+}
+.infolast{
+    display: flex;
+    justify-content: center;
+}
+.jjjj{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.j5{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.k6{
+  display: grid;
+    justify-content: center;
+    margin-top: 30px;
+}
+.fampp{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+.ggg67{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.ggg68{
+    width: 1800px;
+    height: auto;
+}
+.final{
+    display: flex;
+    justify-content: center;
+    margin-top: 155px;
+}
+.finallast{
+      width: 1300px;
+    height: 800px;
+}
+.oog{
+    position: absolute;
+    right: 0;
+   bottom: 0;
+   z-index: 5;
+}
+.oog2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+}
+.oog3{
+    transform: translateY(80px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    margin-top: 800px;
+}
+/* ===== RESPONSIVE DESIGN ===== */
+/* Общие настройки */
+
+*{
+box-sizing: border-box;
+}
+
+html {
+width: 100%;
+overflow-x: hidden;
+}
+body {
+width: 100%;
+max-width: 100%;
+margin: 0;
+overflow-x: hidden;
+}
+img {
+max-width: 100%;
+height: auto;
+}
+/* Планшеты */
+@media screen and (max-width: 768px) {
+body {
+font-size: 16px;
+}
+}
+/* Телефоны */
+@media screen and (max-width: 480px) {
+body {
+font-size: 14px;
+}
+}
+/* Большие экраны */
+@media screen and (min-width: 1600px) {
+body {
+width: 100%;
+}
+}
+[14.11.2026 22:36] _Kan_?: .fullscreen-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+[14.11.2026 22:36] _Kan_?: @media (max-width: 600px) {
+    .fullscreen-image {
+        height: 60vh;
+    }
+}
